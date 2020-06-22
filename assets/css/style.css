@@ -100,55 +100,190 @@ li {
 /*for wrapper*/
 .wrapper {
   max-width: 1360px;
-  width: 86%; 
+  width: 88%; 
   margin: 0 auto;
 }
+
+body { background: #e8f4f8; }
 /*=================================
   Header styling starts here
 =================================*/
 
+h1 {
+  padding: 75px 0;
+  font-size: 45px;
+  font-weight: 600;
+  text-align: center;
+  text-transform: uppercase;
+}
 
-
-
-
+header a { color: #99d0e0; }
 
 /*=================================
   Header styling ends here
-=================================*/  
+=================================*/   
 
 /*=================================
   main styling starts here
 =================================*/
 
+/*birthday calender start here*/
 
+.weak,
+.weak + div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
 
+.form-container .form-group,
+.form-control {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  position: relative;
+}
 
+.form-control { margin-top: 20px; }
 
+.weak > li {
+  -ms-flex-preferred-size: 13%;
+  flex-basis: 13%;
+}
 
+h3 {
+  padding: 10px 6%;
+  -webkit-border-top-right-radius: 2px; 
+  -moz-border-top-right-radius: 2px; 
+  border-top-right-radius: 5px;
+  -webkit-border-top-left-radius: 2px; 
+  -moz-border-top-left-radius: 2px; 
+  border-top-left-radius: 5px;
+  background: #85c7da;
+  color: #f5f5f5;
+  text-align: center;
+  text-transform: uppercase;
+}
 
+.weak li > ul {
+  min-height: 160px;
+  width: 91%;
+  margin-bottom: 40px;
+  border-bottom-left-radius: 3%;
+  border-bottom-right-radius: 3%;
+  background: #fff;
+  display: inline-block;
+  padding: 7px;
+  overflow: hidden;
+}
+
+.weak ul > li {
+  margin: 5px 2px;
+  background: #85c7da;
+  color: #fff;
+  font-weight: 800;
+  flex-basis: 30%;
+  width: 40%;
+  text-align: center;
+  padding: 10px 5px;
+  align-items: center;
+  border-radius: 4px;
+  position: relative;
+  left: -500%;
+  -webkit-animation: slide 1s forwards;
+  animation: slide 1s forwards;
+}
+
+@-webkit-keyframes slide {
+  100% { left: 0; }
+}
+
+@keyframes slide {
+  100% { left: 0; }
+}
+
+.form-group label {
+  display: block;
+  color: #7e8b95;
+  font-size: 24px;
+}
+
+textarea {
+  min-width: 100%;
+  min-height: 400px;
+  padding: 10px 2%;
+}
+
+.weak + div > div:first-child {
+  -ms-flex-preferred-size: 60%;
+  flex-basis: 60%;
+} 
+
+.weak + div > div:last-child {
+  -ms-flex-preferred-size: 35%;
+  flex-basis: 35%;
+} 
+
+.form-group input {
+  width: 70%;
+  padding: 18px 3%;
+  background: #fff;
+  border: 1px solid #85c7da;
+   -webkit-border-radius: 4px; 
+  -moz-border-radius: 4px; 
+  border-radius: 4px;
+  margin: 10px 0;
+  font-size: 18px;
+}
+
+.form-container span {
+  margin: 12px 0;
+  font-size: 12px;
+  transition: all .3s ease;
+}
+
+.error-msg {
+  width: 38%;
+  padding: 10px;
+  border-radius: 5px;
+  background: #dc3545;
+  color: #fff;
+  position: absolute;
+  top: -13px;
+  right: 100px;
+  transform: scale(0);
+}
+
+.visible { transform: scale(1);}
+
+.form-control input {
+  width: 50%;
+  padding: 18px 12%;
+  border : 1px solid #0186ef;
+   -webkit-border-radius: 4px; 
+  -moz-border-radius: 4px; 
+  border-radius: 4px;
+  background: #0186ef;
+  color: #fff;
+  font-size: 18px;
+  text-transform: uppercase;
+}
+/*birthday calender styling end here*/
 
 /*=================================
   main styling ends here
 =================================*/
-
-/*=================================
-  footer styling starts here
-=================================*/ 
-
-
-
-
-
-
-
- /*=================================
-  footer styling ends here
-=================================*/ 
-
-/*media query starts*/
-/*media query for 995px starts here*/
-@media only screen and (max-width: 995px) {
-
-
-
-}  
+@media only screen and (min-width: 1024px) {
+  header a:hover { color: #000; }  
+  .form-control input:hover {
+    background: #fff;
+    color: #7e8b95;
+  }
+}
