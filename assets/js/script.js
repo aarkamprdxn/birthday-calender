@@ -1,8 +1,7 @@
 window.onload = function () {
 	const submitButton = document.querySelector('.submit');
 	const display = Array.from(document.querySelectorAll('.weak ul'));
-	const displayLi = Array.from(document.querySelectorAll('.weak ul li'))
-	// const url = 'https://raw.githubusercontent.com/saniketprdxn/JsonData/master/Users.json';
+	const displayLi = Array.from(document.querySelectorAll('.weak ul li'));
 	let url = 'https://aarkamprdxn.github.io/birthday-calendar/assets/Json/User.json';
     const weekdays = ["sun", "mon", "tue", "wed", "thu", "fri", "sat"];
 	const givenData = document.querySelector('textarea');
