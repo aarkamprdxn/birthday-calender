@@ -100,50 +100,26 @@ li {
 /*for wrapper*/
 .wrapper {
   max-width: 1360px;
-  width: 86%; 
+  width: 88%; 
   margin: 0 auto;
 }
+
+body { background: #e8f4f8; }
 /*=================================
   Header styling starts here
 =================================*/
 
+h1 {
+  padding: 75px 0;
+  font-size: 45px;
+  font-weight: 600;
+  text-align: center;
+  text-transform: uppercase;
+
+}
+
+header a { color: #99d0e0; }
+
 /*=================================
   Header styling ends here
-=================================*/  
-
-/*=================================
-  main styling starts here
-=================================*/
-
-
-
-
-
-
-
-
-/*=================================
-  main styling ends here
-=================================*/
-
-/*=================================
-  footer styling starts here
-=================================*/ 
-
-
-
-
-
-
-
- /*=================================
-  footer styling ends here
-=================================*/ 
-
-/*media query starts*/
-/*media query for 995px starts here*/
-@media only screen and (max-width: 995px) {
-
-
-
-}  
+=================================*/   
